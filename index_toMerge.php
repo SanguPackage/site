@@ -54,14 +54,34 @@ if (!$isLocal) {
 </table>
 
 <h1>Installatie</h1>
-Het script downloaden: 
+Het script downloaden: <br>
+<font size=16>
 <a href="<?php echo $fileName; ?>" onclick="var that=this;_gaq.push(['_trackEvent','Downloads','LinkClicked','<?php echo $currentVersion; ?>']);setTimeout(function(){location.href=that.href;},200);return false;"><?php echo $fileName; ?></a>
-<br>Laatste update: <?php echo $lastReleaseDate; ?> (<?php echo $currentVersion; ?>)
+</font>
+<br>Laatste update: <?php echo $lastReleaseDate; ?> (<span id='sanguPackageVersion'><?php echo $currentVersion; ?></span>)
+
+
+
+<br>
+
+<style>
+#versionCheckResult {
+	display: none;
+	border: 1px solid black;
+	width: 350px;
+	height: 45px;
+}
+</style>
+
+<div id='versionCheckResult'>
+</div>
 
 <br><br>
 Installeren met <a href="http://forum.tribalwars.nl//showthread.php?t=33076" target=_blank>Opera</a><br>
 Installeren met <a href="http://forum.tribalwars.nl//showpost.php?p=689062&postcount=2" target=_blank>Firefox</a><br>
 Installeren met <a href="http://forum.tribalwars.nl//showpost.php?p=689085&postcount=3" target=_blank>Chrome</a> (Of via <a href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=nl" target=_blank>Tampermonkey</a>)
+<!-- Zoek hier een icoontje voor ofzo -->
+<br><a href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE">Installeren via de Google Chrome Store</a>
 
 <h1>Donatie</h1>
 <table width=100% border=0>
