@@ -3,7 +3,7 @@ header('Content-type: text/html; charset=UTF-8') ;
 
 $currentVersion = '//<!--@@INCLUDE "version.txt" INDENT=0 //-->';
 $lastReleaseDate = "//<!--@@INCLUDE CURRENTDATE //-->";
-$isLocal = $_SERVER["REMOTE_ADDR"] == "127.0.0.1";
+$isLocal = $_SERVER["REMOTE_ADDR"] == "127.0.0.1" || $_SERVER["REMOTE_ADDR"] == "::1";
 $fileName = "sangupackage.user.js";
 ?>
 <html>
